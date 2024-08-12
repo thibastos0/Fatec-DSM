@@ -1,0 +1,17 @@
+body {
+  background-color: cornflowerblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+
+#caixa1 {
+  width: 500px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
