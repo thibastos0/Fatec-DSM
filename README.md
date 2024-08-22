@@ -1,12 +1,14 @@
 # thibastos0
 **Thiago Bastos** \
-DSM - FATEC | Desenvolvimento Web I.
+DSM (Desenvolvimento de Software Multiplataforma) - FATEC | 2º Semestre 2024.
 
 ---
 > Pequena é a parte da vida que vivemos, pois todo restante não é vida mas tempo.
 \- Sêneca
 
-Acompanhamento das atividades e aulas realizadas -> [aula001.md](https://github.com/thibastos0...)
+## Acompanhamento das atividades
+
+Desenvolvimento Web I -> [aula001.md](https://github.com/thibastos0...)
 
 ## 😎🔗 Conecte-se comigo
 
@@ -25,6 +27,3 @@ Acompanhamento das atividades e aulas realizadas -> [aula001.md](https://github.
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thibastos0&theme=transparent&bg_color=003e77&border_color=513A00&show_icons=true&icon_color=FFF&title_color=F9F871&text_color=D7A31A)
 
 ![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=thibastos0&layout=compact&bg_color=003e77&border_color=513A00&title_color=F9F871&text_color=D7A31A)
-
-## Minhas contribuições
-
