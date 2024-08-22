@@ -8,7 +8,7 @@ DSM (Desenvolvimento de Software Multiplataforma) - FATEC | 2º Semestre 2024.
 
 ## Acompanhamento das atividades
 
-Desenvolvimento Web I -> [aula001.md](https://github.com/thibastos0/Fatec-DSM-01SEM/Desenvolvimento Web I/html_css/001aula/aula001.md)
+Desenvolvimento Web I -> [aula001.md](https://github.com/thibastos0/Fatec-DSM-01SEM/blob/406c8265782af79f7855305b97703a8d95e2b001/Desenvolvimento%20Web%20I/html_css/001aula/aula001.md)
 
 ## 😎🔗 Conecte-se comigo
 
