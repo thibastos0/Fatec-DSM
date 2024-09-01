@@ -1,10 +1,10 @@
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(100, 237, 168);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
-  color: blue;
+  color: rgb(20, 1, 102);
 }
 
 #caixa1 {
