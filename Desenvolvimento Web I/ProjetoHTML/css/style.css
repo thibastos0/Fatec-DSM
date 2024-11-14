@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body{
+    /*background-color: rgb(7, 29, 65);*/
+	background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.menu img{
+   width: 20%;
+}
+
+.secao{
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+
+.secao p{
+    color:white;
+}
+
+.secao img{    
+    filter:blur(1px);
+    transition: transform .2s;
+}
+
+.img1:hover {
+    filter:initial;
+    transform: scale(0.85);
+}
+
+.img2:hover {
+    filter:initial;
+    transform: scale(0.85);
+}
+
+.img3:hover {
+    filter:initial;
+    transform: scale(0.85);
+}
+
+.rodape{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.rodape p{
+    margin: 0;
+    color:rgb(242,198,52)
+}

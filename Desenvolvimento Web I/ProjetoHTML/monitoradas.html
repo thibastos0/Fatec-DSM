@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard SMS - NAV Brasil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dash.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary menu">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <a class="navbar-brand" href="#">
+          <img src="imagem/SMS.jpg" class="img-thumbnail" alt="LogoSMS">
+        </a>
+      </div>            
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-justified">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solicitaracesso.html">Solicite Acesso</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboards
+            </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="monitoradas.html">Ocorrências Monitoradas</a></li>
+          <li><a class="dropdown-item" href="RICEAPSI.html">Ocorrências (RICEA) - Aspectos Psicológicos</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="equipamentos.html">Equipamentos</a></li>
+        </ul>
+          </li>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container overflow-hidden text-center secao" id="monitoradas">
+    <div class="row gx-5">
+      <p class="fs-1 fw-bolder">Ocorrências Monitoradas:</p>
+        <div class="col-12">           
+          <div class="p-3 powerbi">
+            <iframe title="Ocorrências Monitoradas - Análise" width="1580" height="741" src="https://app.powerbi.com/reportEmbed?reportId=ee3d8886-d1f4-4270-9480-31d1540ebb82&autoAuth=true&ctid=a083f1aa-2a65-4a4f-a4ab-4b044b304760" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div>
+            <p>Disponíveis dados de todas as dependências.</p>
+          </div>
+        </div>
+       
+    </div>
+   </section>
+
+  </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
