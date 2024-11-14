@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard SMS - NAV Brasil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary menu">
+  <nav class="nav flex-column fixed-top navbar-expand-lg bg-body-tertiary menu">
     <div class="container-fluid">
       <div class="collapse navbar-collapse">
         <a class="navbar-brand" href="#">
@@ -21,23 +22,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-justified">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="solicitaracesso.html">Solicite Acesso</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboards
-            </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="monitoradas.html">Ocorrências Monitoradas</a></li>
-          <li><a class="dropdown-item" href="RICEAPSI.html">Ocorrências (RICEA) - Aspectos Psicológicos</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="equipamentos.html">Equipamentos</a></li>
-        </ul>
-          </li>
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -50,13 +38,15 @@
     <div class="row gx-5">
       <p class="fs-1 fw-bolder">Dashboards disponíveis:</p>
         <div class="col">           
-          <div class="p-3">
+          <!--<div class="p-3">-->
+          <div class="p-1">
             <img src="imagem/OcorrênciasMonitoradas.jpg" class="img-thumbnail img1" alt="Ocorrências Monitoradas">
           </div>
           <div>
             <a href="monitoradas.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ocorrências Monitoradas</a>
           </div>
         </div>
+      <!--
         <div class="col">
           <div class="p-3">
             <img src="imagem/RICEAPSI.jpg" class="img-thumbnail img2" alt="Ocorrências RICEA - Aspectos Psicológicos">
@@ -73,14 +63,15 @@
             <a href="equipamentos.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Equipamentos (atualmente Sistema de Gravação somente)</a>
           </div>
         </div>
-      </div>
-    </section>
+      -->
+    </div>
+  </section>
 
-    <footer class="fs-5 fw-bold text-center rodape">
-      <p>Segurança Operacional:​</p>
-      <p>Compromisso de todos.</p>
-    </footer>
-  </body>
+  <footer class="fs-5 fw-bold text-center rodape">
+    <p>Segurança Operacional:​</p>
+    <p>Compromisso de todos.</p>
+  </footer>
+</body>
 </html>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
