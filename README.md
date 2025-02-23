@@ -12,7 +12,7 @@ Desenvolvimento Web I -> [aula001.md](https://github.com/thibastos0/Fatec-DSM-01
 
 ## 😎🔗 Conecte-se comigo
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=009CE2)](https://www.linkedin.com/in/thiago-lima-de-carvalho-bastos-luiz-2a0592221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdXS0dHbMROmBEmzRDpzsAg%3D%3D) [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=gmail&logoColor=96080E)](mailto:thibastos@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=009CE2)](https://www.linkedin.com/in/thiabastos0) [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=gmail&logoColor=96080E)](mailto:thibastos@gmail.com)
 
 ## 💻 Habilidades
 
