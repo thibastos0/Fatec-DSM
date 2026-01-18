@@ -54,26 +54,27 @@
 		</dependency>
 
 		<dependency>
-			<groupID>org.telegram</groupID>
-			<artifactID>telegrambots-spring-boot-starter</artifactID>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots-spring-boot-starter</artifactId>
 			<version>6.9.7.1</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.squareup.okhttp3</groupId>
-			<artifactId>okhttp</artifactId>
-			<version>5.3.2</version>
+    		<groupId>com.squareup.okhttp3</groupId>
+    		<artifactId>okhttp</artifactId>
+    		<version>4.12.0</version>
+    		<scope>compile</scope>
 		</dependency>
 
 		<dependency>
-			<gorupID>org.json</gorupID>
-			<artifactID>json</artifactID>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
 			<version>20251224</version>
 		</dependency>
 
 		<dependency>
-			<groupID>org.projectlombok</groupID>
-			<artifactID>lombok</artifactID>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 			<version>1.18.42</version>
 			<scope>provided</scope>
 		</dependency>

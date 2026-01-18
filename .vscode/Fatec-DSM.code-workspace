@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"telegram-bot-spring-chatgpt/src/main/java",
+			"telegram-bot-spring-chatgpt/src/test/java"
+		]
+	}
+}
