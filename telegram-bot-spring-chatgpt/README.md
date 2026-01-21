@@ -16,6 +16,7 @@ Antes de começar, certifique-se de ter instalado:
 - **Maven 3.8+**
 - Uma **conta no Telegram** e acesso ao [@BotFather](https://t.me/botfather) para criar um bot
 - Chave de API do **ChatGPT** (OpenAI API Key)
+- **Créditos na conta OpenAI** - A API requer saldo disponível para funcionar (não é gratuita)
 
 ## 🚀 Instalação e Configuração
 
@@ -99,8 +100,24 @@ telegram-bot-spring-chatgpt/
 ## 📦 Dependências Principais
 
 - **Spring Boot 4.0.1**: Framework web e injeção de dependência
+- **Spring AI (OpenAI)**: Integração com OpenAI APIs através do Spring
 - **TelegramBots 6.9.7.1**: SDK oficial do Telegram para Java
-- **OpenAI API**: Integração com ChatGPT
+- **OkHttp**: Cliente HTTP para chamadas REST
+
+## 🔍 Implementações Disponíveis
+
+O projeto oferece duas implementações para comunicação com a API do OpenAI:
+
+### 1. `ChatGPTClient` (Implementação Manual)
+- Usa **OkHttp** para fazer requisições HTTP diretas
+- Controle total sobre a requisição e resposta
+- Parsing manual do JSON
+
+### 2. `ChatGPTSpringExample` (Implementação Spring AI)
+- Usa **Spring AI** (dependência do Spring Framework)
+- Abstrações de alto nível para APIs de IA
+- Suporte nativo para modelos de moderação da OpenAI
+- Gerenciamento automático de requisições e retry
 
 ## 🔧 Configuração Avançada
 
@@ -113,6 +130,11 @@ Para mais detalhes sobre Spring Boot, consulte:
 - **Variáveis de Ambiente**: Nunca commite sua API key ou token do bot no repositório. Use variáveis de ambiente.
 - **Rate Limiting**: O Telegram tem limites de taxa. Implemente cache e throttling se necessário.
 - **Custos da API**: Cada requisição ao ChatGPT gera custos. Monitore seu uso na plataforma OpenAI.
+- **⚠️ Créditos Necessários**: A API do OpenAI **requer saldo/créditos** na conta para funcionar. Acesse [OpenAI Billing](https://platform.openai.com/account/billing) para adicionar créditos e configurar método de pagamento.
+- **Erro 429 (Too Many Requests)**: Indica que você atingiu o limite de requisições ou está sem créditos. Verifique:
+  - Saldo disponível na conta OpenAI
+  - Limites de rate em [OpenAI Rate Limits](https://platform.openai.com/account/rate-limits)
+  - Se está no tier gratuito (limites muito baixos)
 
 ## 🤝 Contribuindo
 

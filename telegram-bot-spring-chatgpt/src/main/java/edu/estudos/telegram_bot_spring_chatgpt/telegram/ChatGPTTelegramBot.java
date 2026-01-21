@@ -7,7 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.support.PropertiesLoaderSupport;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ActionType;
@@ -22,16 +21,18 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
 
     private static final int MAX_REQUESTS_PER_MINUTE = 3;
 
-    @Value("${telegram.bot.api}")
+    @Value("${telegram.bot.token}")
     private String botToken;
     
     private final ChatGPTClient chatGPTClient;
+    private final ChatGPTSpringExample chatGPTSpringExample;
 
     private final ConcurrentHashMap<Long, UserWindow> userWindows = new ConcurrentHashMap<>();
 
     @Autowired
-    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, PropertiesLoaderSupport propertiesLoaderSupport) {
+    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, ChatGPTSpringExample chatGPTSpringExample) {
         this.chatGPTClient = chatGPTClient;
+        this.chatGPTSpringExample = chatGPTSpringExample;
     }
 
     @Override
@@ -50,6 +51,7 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
 
         if(isRateLimited(chatId)) {
             sendText(chatId, "Limite de requisições atingido. Tente novamente mais tarde.");
+            return;
         }
 
         String prompt = messageText.substring(4).trim();
@@ -62,10 +64,15 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
 
         try {
             String answer = chatGPTClient.ask(prompt);
+            //String answer = chatGPTSpringExample.ask(prompt);
             sendText(chatId, answer);
         } catch (IOException e) {
             System.err.println("Erro ao conectar com o ChatGPT: " + e.getMessage());
             sendText(chatId, "Erro ao conectar com o ChatGPT. Tente novamente mais tarde.");
+        } catch (Exception e) {
+            System.err.println("Erro inesperado: " + e.getMessage());
+            e.printStackTrace();
+            sendText(chatId, "❌ Erro: " + e.getMessage());
         }
         
     }
@@ -78,7 +85,7 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
     @Override
     public String getBotUsername() {
         //nome do bot criado no BotFather
-        return "socorre_bot";
+        return "conversa_chatgpt_bot";
     }
 
     private void sendTypingAction(Long chatId) {

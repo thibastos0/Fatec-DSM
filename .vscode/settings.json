@@ -3,5 +3,6 @@
         "telegram-bot-spring-chatgpt/src/main/java",
         "telegram-bot-spring-chatgpt/src/test/java"
     ],
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
