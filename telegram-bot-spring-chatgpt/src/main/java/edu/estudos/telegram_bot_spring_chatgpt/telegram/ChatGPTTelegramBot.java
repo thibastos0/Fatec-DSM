@@ -26,13 +26,15 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
     
     private final ChatGPTClient chatGPTClient;
     private final ChatGPTSpringExample chatGPTSpringExample;
+    private final ChatGPTChatSpringExample chatGPTChatSpringExample;
 
     private final ConcurrentHashMap<Long, UserWindow> userWindows = new ConcurrentHashMap<>();
 
     @Autowired
-    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, ChatGPTSpringExample chatGPTSpringExample) {
+    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, ChatGPTSpringExample chatGPTSpringExample, ChatGPTChatSpringExample chatGPTChatSpringExample) {
         this.chatGPTClient = chatGPTClient;
         this.chatGPTSpringExample = chatGPTSpringExample;
+        this.chatGPTChatSpringExample = chatGPTChatSpringExample;
     }
 
     @Override
@@ -63,8 +65,9 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
         sendTypingAction(chatId);
 
         try {
-            String answer = chatGPTClient.ask(prompt);
+            //String answer = chatGPTClient.ask(prompt);
             //String answer = chatGPTSpringExample.ask(prompt);
+            String answer = chatGPTChatSpringExample.ask(prompt);
             sendText(chatId, answer);
         } catch (IOException e) {
             System.err.println("Erro ao conectar com o ChatGPT: " + e.getMessage());
