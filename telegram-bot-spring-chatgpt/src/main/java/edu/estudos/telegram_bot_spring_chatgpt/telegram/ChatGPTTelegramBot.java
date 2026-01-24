@@ -1,6 +1,6 @@
 package edu.estudos.telegram_bot_spring_chatgpt.telegram;
 
-import java.io.IOException;
+//import java.io.IOException;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.ConcurrentHashMap;
@@ -27,14 +27,16 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
     private final ChatGPTClient chatGPTClient;
     private final ChatGPTSpringExample chatGPTSpringExample;
     private final ChatGPTChatSpringExample chatGPTChatSpringExample;
+    private final GeminiExample geminiExample;
 
     private final ConcurrentHashMap<Long, UserWindow> userWindows = new ConcurrentHashMap<>();
 
     @Autowired
-    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, ChatGPTSpringExample chatGPTSpringExample, ChatGPTChatSpringExample chatGPTChatSpringExample) {
+    public ChatGPTTelegramBot(ChatGPTClient chatGPTClient, ChatGPTSpringExample chatGPTSpringExample, ChatGPTChatSpringExample chatGPTChatSpringExample, GeminiExample geminiExample) {
         this.chatGPTClient = chatGPTClient;
         this.chatGPTSpringExample = chatGPTSpringExample;
         this.chatGPTChatSpringExample = chatGPTChatSpringExample;
+        this.geminiExample = geminiExample;
     }
 
     @Override
@@ -67,11 +69,9 @@ public class ChatGPTTelegramBot extends TelegramLongPollingBot {
         try {
             //String answer = chatGPTClient.ask(prompt);
             //String answer = chatGPTSpringExample.ask(prompt);
-            String answer = chatGPTChatSpringExample.ask(prompt);
+            //String answer = chatGPTChatSpringExample.ask(prompt);
+            String answer = geminiExample.ask(prompt);
             sendText(chatId, answer);
-        } catch (IOException e) {
-            System.err.println("Erro ao conectar com o ChatGPT: " + e.getMessage());
-            sendText(chatId, "Erro ao conectar com o ChatGPT. Tente novamente mais tarde.");
         } catch (Exception e) {
             System.err.println("Erro inesperado: " + e.getMessage());
             e.printStackTrace();
