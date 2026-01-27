@@ -1,0 +1,3 @@
+Acessar curso em: https://cursos.alura.com.br/imersao/imersao-dados-python-ii
+Base de dados utilizada: https://raw.githubusercontent.com/guilhermeonrails/data-jobs/refs/heads/main/salaries.csv
+Aula1: https://github.com/guilhermeonrails/idcp-alura/blob/T8R7W1/Todas_as_aulas_Imers%C3%A3o_dados_com_Python_Alura_Agosto_2025.ipynb
