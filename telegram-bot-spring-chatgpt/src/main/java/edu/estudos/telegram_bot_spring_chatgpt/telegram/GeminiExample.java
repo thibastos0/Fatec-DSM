@@ -26,7 +26,7 @@ public class GeminiExample {
             if (response == null || response.getResults() == null || response.getResults().isEmpty()) {
                 return "❌ Resposta vazia do Gemini";
             }
-
+            
             String result = response.getResult()
                     .getOutput()
                     .getText();
