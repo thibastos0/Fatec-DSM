@@ -7,5 +7,12 @@ Aula4:https://cursos.alura.com.br/imersoes/aulas/aula-04-c207
 python3 -m venv .venv
 2. Ativar
 source .venv/bin/activate
+3. Criar arquivo requirements
+requirements.txt
+4. Instalar dependências
+pip install -r requirements.txt
+
+Rodar o streamlit:
+streamlit run app.py
 
 https://github.com/almeidamarcell/imersao-dados-python-alura-2025
