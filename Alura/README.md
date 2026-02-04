@@ -2,11 +2,24 @@
 
 Este repositório contém os projetos e exercícios desenvolvidos durante a **Imersão Dados com Python 2026** da Alura.
 
+## 🌐 Demo ao Vivo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aula-4-9harmqmmzxvxtnkjghngyg.streamlit.app/)
+
+![Dashboard Preview](dashboard-preview.png)
+
 ## 📚 Sobre a Imersão
 
 A Imersão Dados é um evento gratuito promovido pela Alura que ensina análise de dados com Python através de aulas práticas e projetos reais.
 
 🔗 [Guia de Mergulho - Imersão Dados com Python 2026](https://grupoalura.notion.site/Imers-o-Dados-com-Python-2026-Guia-de-Mergulho-2d9379bdd09b81fe89f8ff4b3f3f4aee)
+
+## ✨ Funcionalidades do Dashboard
+
+- 📊 Visualização interativa de dados salariais na área de tecnologia
+- 🔍 Filtros dinâmicos para análise personalizada
+- 📈 Gráficos e estatísticas sobre o mercado de dados
+- 🎨 Interface responsiva e intuitiva desenvolvida com Streamlit
 
 ## 📁 Estrutura do Projeto
 
@@ -35,8 +48,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Site do projeto disponível em:
-🔗 [Dashboard de Salários na Área de Dados hospedado no streamlit.io](https://aula-4-9harmqmmzxvxtnkjghngyg.streamlit.app/)
+> 🌐 **Ou acesse diretamente a [versão hospedada](https://aula-4-9harmqmmzxvxtnkjghngyg.streamlit.app/)**
 
 ## 🛠️ Tecnologias Utilizadas
 
