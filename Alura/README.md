@@ -35,6 +35,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+Site do projeto disponível em:
+🔗 [Dashboard de Salários na Área de Dados hospedado no streamlit.io](https://aula-4-9harmqmmzxvxtnkjghngyg.streamlit.app/)
+
 ## 🛠️ Tecnologias Utilizadas
 
 - Python
