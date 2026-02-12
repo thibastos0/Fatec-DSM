@@ -33,7 +33,8 @@ public class TelegramBotSpringChatgptApplication {
     	System.out.println("Working dir: " + projectDir);
 
         Dotenv dotenv = Dotenv.configure()
-                .directory(projectDir + "/telegram-bot-spring-chatgpt")   // usa o diretório da execução
+                //.directory(projectDir + "/telegram-bot-spring-chatgpt")   // usa o diretório da execução
+				.directory(projectDir) // aparentemetente a maneira como o VS Code abre o workspace influencia o diretório de execução
 				.filename(".env")
                 .ignoreIfMissing()       // evita erro quando o .env não existir (Render)
                 .load();
